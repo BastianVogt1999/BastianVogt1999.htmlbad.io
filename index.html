@@ -1,6 +1,6 @@
 <!doctype html>
 
-
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <html>
   
   <head>
@@ -12,7 +12,14 @@
       <center>
  
         <!-- img element without src attribute -->
-        <img id="image" src="" />
+        <ul>
+          <li>
+            <img id="image" src="" />
+          </li>
+          <li><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_REOnx3.json"  background="transparent"  speed="1"  style="width: 1500px; height: 1500px;"   ></lottie-player></li>
+        </ul>
+        
       </center>
     </div>
   <center>
@@ -23,13 +30,16 @@
     </center>
     <script>
         function show() {
+          let player = document.querySelector("lottie-player");
+
+          player.play();
  
             /* Get image and change value
             of src attribute */
             let image = document.getElementById("image");
  
             image.src =
-"surprise.png"
+"hannahV1.png"
  
             document.getElementById("btnID")
                     .style.display = "none";
