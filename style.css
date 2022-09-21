@@ -33,10 +33,11 @@ body {
   text-transform: uppercase;
   outline: none;
   overflow: hidden;
+  height: 20%;
   position: relative;
   color: #fff;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 40px;
   background-color: #222;
   padding: 17px 60px;
   margin: 0 auto;
